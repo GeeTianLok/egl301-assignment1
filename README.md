@@ -14,7 +14,7 @@ The timetable automatically calculates break times and has built-in collision pr
 ### **CLEAR THE DUMMY DATA IN THE NODE MODULE THAT I HAVE ADDED FOR DEMO PURPOSES**
 
 You can import this module like any other Node.js module.  
-It is recommended that you run `app.js` after reading through it to study its output.
+It is recommended that you run app.js after reading through it to study its output.
 
 ---
 
@@ -157,7 +157,7 @@ console.log(timeTableModule.getTimetable("T001"));
 
 ### 6. printTimetable
 
-This function displays the timetable in a formatted table, showing breaks and lecture timings.
+This function displays the timetable in a formatted table and calculate the breaks.
 
 **Example usage:**
 
