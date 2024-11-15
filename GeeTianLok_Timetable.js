@@ -169,7 +169,6 @@ module.exports = {
         var breakEndTime;
 
         //Adds a 0 to the start of mins/hrs if its only 1 digit
-        //This is the 4th time ive typed this and I probably should've made a function for it but the deadline is minutes away so yeah
         if (breakEndHours < 10) {
           breakEndTime = "0" + breakEndHours;
         } else {
