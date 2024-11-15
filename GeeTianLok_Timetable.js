@@ -23,7 +23,7 @@ module.exports = {
   },
 
   getLecture(id) {
-    return this.Lectures[id] !== undefined ? this.Lectures[id] : null;
+    return this.Lectures[id];
   },
 
   getAllLectures() {
@@ -93,7 +93,9 @@ module.exports = {
       return;
     }
 
+    //Container to make working with console.table easier
     var lects = [];
+
     var timetable = this.getTimetable(id);
     var prevEndTime = 0;
 
