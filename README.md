@@ -36,8 +36,6 @@ This function creates a lecture with the following parameters:
 timeTableModule.setLecture("L004", "Algebra", 16, 3, "Jerry");
 ```
 
-````
-
 ---
 
 ### 2. GetLecture
@@ -144,4 +142,3 @@ Timetable: T001
 │ 4       │ 'Chemistry' │ '16:00'   │ '19:00' │ 'Jerry'  │ '3h'     │
 └─────────┴─────────────┴───────────┴─────────┴──────────┴──────────┘
 ```
-````
