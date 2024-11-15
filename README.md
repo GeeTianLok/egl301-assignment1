@@ -69,13 +69,8 @@ console.log(algebraClass);
 
 **Expected output:**
 
-```json
-{
-  "name": "Algebra",
-  "startTime": 16,
-  "duration": 3,
-  "lecturer": "Jerry"
-}
+```
+{"name":"Chemistry","startTime":16,"duration":3,"lecturer":"Jerry"}
 ```
 
 ---
@@ -182,4 +177,4 @@ Timetable: T001
 
 # References
 
-[The Tables thing](https://developer.mozilla.org/en-US/docs/Web/API/console/table_static)
+[The Tables Thing](https://developer.mozilla.org/en-US/docs/Web/API/console/table_static)
