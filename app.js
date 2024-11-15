@@ -17,6 +17,8 @@ console.log(console.table(timeTableModule.getAllLectures()));
 console.log("Manipulation of timetable data");
 console.log("==================================");
 
+timeTableModule.setTimetable("T001", ["L001", "L002", "L003"]);
+
 timeTableModule.setTimetable("T001", ["L001", "L003", "L004"]);
 console.log(timeTableModule.getTimetable("T001"));
 

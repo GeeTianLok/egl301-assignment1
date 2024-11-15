@@ -3,13 +3,13 @@
 ## Timetable Manager
 
 This module allows you to create lectures with varying times and durations and add them to timetables.  
-The timetable is capable of automatically calculating break times and has built-in collision prevention for lectures.
+The timetable automatically calculates break times and has built-in collision prevention for lectures.
 
 ---
 
 ## Usage
 
-CLEAR THE DUMMY DATA IN THE NODE MODULE THAT I HAVE ADDED FOR DEMO PURPOSES
+### **CLEAR THE DUMMY DATA IN THE NODE MODULE THAT I HAVE ADDED FOR DEMO PURPOSES**
 
 You can import this module like any other Node.js module.  
 It is recommended that you run `app.js` after reading through it to study its output.
@@ -25,16 +25,18 @@ It is recommended that you run `app.js` after reading through it to study its ou
 5. [getTimetable](#5-gettimetable)
 6. [printTimetable](#6-printtimetable)
 
-I will be demostrating the following with this set of dummy data
+---
+
+**Dummy Data Example:**
 
 ```js
-  Lectures: {
-    L001: { name: "math", startTime: 9.5, duration: 2, lecturer: "Bob" },
-    L002: { name: "english", startTime: 11, duration: 6, lecturer: "Josh" },
-    L003: { name: "science", startTime: 13, duration: 2, lecturer: "Tim" },
-  },
+Lectures: {
+  L001: { name: "math", startTime: 9.5, duration: 2, lecturer: "Bob" },
+  L002: { name: "english", startTime: 11, duration: 6, lecturer: "Josh" },
+  L003: { name: "science", startTime: 13, duration: 2, lecturer: "Tim" },
+},
 
-  TimeTables: {},
+TimeTables: {},
 ```
 
 ---
@@ -67,7 +69,7 @@ console.log(algebraClass);
 
 ```json
 {
-  "name": "Chemistry",
+  "name": "Algebra",
   "startTime": 16,
   "duration": 3,
   "lecturer": "Jerry"
@@ -95,7 +97,7 @@ console.table(timeTableModule.getAllLectures());
 │ L001    │ 'math'      │ 9.5       │ 2        │ 'Bob'    │
 │ L002    │ 'english'   │ 11        │ 6        │ 'Josh'   │
 │ L003    │ 'science'   │ 13        │ 2        │ 'Tim'    │
-│ L004    │ 'Chemistry' │ 16        │ 3        │ 'Jerry'  │
+│ L004    │ 'Algebra'   │ 16        │ 3        │ 'Jerry'  │
 └─────────┴─────────────┴───────────┴──────────┴──────────┘
 ```
 
@@ -115,7 +117,20 @@ timeTableModule.setTimetable("T001", ["L001", "L003", "L004"]);
 
 ```
 Timetable added successfully.
-[ 'L001', 'L003', 'L004' ]
+```
+
+**Example with collisions:**
+
+```javascript
+timeTableModule.setTimetable("T001", ["L001", "L002", "L003"]);
+```
+
+**Expected output:**
+
+```
+Collision detected between L002 and L001
+Collision detected between L003 and L002
+Timetable not added due to collision(s).
 ```
 
 ---
@@ -128,6 +143,12 @@ This function retrieves the timetable by its ID.
 
 ```javascript
 console.log(timeTableModule.getTimetable("T001"));
+```
+
+**Expected output:**
+
+```
+[ 'L001', 'L003', 'L004' ]
 ```
 
 ---
@@ -153,6 +174,6 @@ Timetable: T001
 │ 1       │ 'break'     │ '11:30'   │ '13:00' │ 'None'   │ '1.5h'   │
 │ 2       │ 'science'   │ '13:00'   │ '15:00' │ 'Tim'    │ '2h'     │
 │ 3       │ 'break'     │ '15:00'   │ '16:00' │ 'None'   │ '1h'     │
-│ 4       │ 'Chemistry' │ '16:00'   │ '19:00' │ 'Jerry'  │ '3h'     │
+│ 4       │ 'Algebra'   │ '16:00'   │ '19:00' │ 'Jerry'  │ '3h'     │
 └─────────┴─────────────┴───────────┴─────────┴──────────┴──────────┘
 ```
