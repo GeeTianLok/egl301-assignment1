@@ -9,6 +9,8 @@ The timetable is capable of automatically calculating break times and has built-
 
 ## Usage
 
+CLEAR THE DUMMY DATA IN THE NODE MODULE THAT I HAVE ADDED FOR DEMO PURPOSES
+
 You can import this module like any other Node.js module.  
 It is recommended that you run `app.js` after reading through it to study its output.
 
@@ -22,6 +24,18 @@ It is recommended that you run `app.js` after reading through it to study its ou
 4. [setTimetable](#4-settimetable)
 5. [getTimetable](#5-gettimetable)
 6. [printTimetable](#6-printtimetable)
+
+I will be demostrating the following with this set of dummy data
+
+```js
+  Lectures: {
+    L001: { name: "math", startTime: 9.5, duration: 2, lecturer: "Bob" },
+    L002: { name: "english", startTime: 11, duration: 6, lecturer: "Josh" },
+    L003: { name: "science", startTime: 13, duration: 2, lecturer: "Tim" },
+  },
+
+  TimeTables: {},
+```
 
 ---
 
