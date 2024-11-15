@@ -28,6 +28,8 @@ It is recommended that you run app.js after reading through it to study its outp
 5. [getTimetable](#5-gettimetable)
 6. [printTimetable](#6-printtimetable)
 
+For the Set functions you may unilize them on the same ID to overwrite the previous entry.
+
 ---
 
 **The Following Dummy Data Is Used For The Functions Below And They Are Used Sequentually:**
