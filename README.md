@@ -179,3 +179,7 @@ Timetable: T001
 │ 4       │ 'Algebra'   │ '16:00'   │ '19:00' │ 'Jerry'  │ '3h'     │
 └─────────┴─────────────┴───────────┴─────────┴──────────┴──────────┘
 ```
+
+# References
+
+[The Tables thing](https://developer.mozilla.org/en-US/docs/Web/API/console/table_static)
