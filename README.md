@@ -22,6 +22,16 @@ It is recommended that you run app.js after reading it to study it's output.
 5. [setTimetable](#setTimetable)
 6. [printTimetable](#printTimetable)
 
+## GetLecture
+
+testing idk how this works
+
+- ayayayaya
+
+```js
+var algebraClass = timeTableModule.getLecture("L004");
+```
+
 # References
 
 Provide the references that you have used to support your assignment.
