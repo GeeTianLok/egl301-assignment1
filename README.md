@@ -15,7 +15,8 @@ The timetable automatically calculates break times and has built-in collision pr
 ### **CLEAR THE DUMMY DATA IN THE NODE MODULE THAT I HAVE ADDED FOR DEMO PURPOSES**
 
 You can import this module like any other Node.js module.
-(Just place it in a suitable location and import it you may call the functions listed below after)
+
+Just place it in a suitable location and require it you may call the functions listed below after
 
 It is recommended that you run app.js after reading through it to study its output.
 
