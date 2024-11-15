@@ -50,7 +50,7 @@ This function creates a lecture with the following parameters:
 
 **Example usage:**
 
-```javascript
+```js
 timeTableModule.setLecture("L004", "Algebra", 16, 3, "Jerry");
 ```
 
@@ -62,7 +62,7 @@ This function retrieves a lecture by its lecture ID.
 
 **Example usage:**
 
-```javascript
+```js
 var algebraClass = timeTableModule.getLecture("L004");
 console.log(algebraClass);
 ```
@@ -81,7 +81,7 @@ This function retrieves a list of all lectures that have been added.
 
 **Example usage:**
 
-```javascript
+```js
 console.table(timeTableModule.getAllLectures());
 ```
 
@@ -106,7 +106,7 @@ This function creates a timetable by providing the timetable ID and an array of 
 
 **Example usage:**
 
-```javascript
+```js
 timeTableModule.setTimetable("T001", ["L001", "L003", "L004"]);
 ```
 
@@ -118,7 +118,7 @@ Timetable added successfully.
 
 **Example with collisions:**
 
-```javascript
+```js
 timeTableModule.setTimetable("T001", ["L001", "L002", "L003"]);
 ```
 
@@ -138,7 +138,7 @@ This function retrieves the timetable by its ID.
 
 **Example usage:**
 
-```javascript
+```js
 console.log(timeTableModule.getTimetable("T001"));
 ```
 
@@ -156,7 +156,7 @@ This function displays the timetable in a formatted table and calculate the brea
 
 **Example usage:**
 
-```javascript
+```js
 timeTableModule.printTimetable("T001");
 ```
 

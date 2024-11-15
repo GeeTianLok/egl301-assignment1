@@ -1,6 +1,6 @@
 const timeTableModule = require("./GeeTianLok_Timetable.js");
 
-//Get set and data retrival
+//Manipulation of lecture data
 console.log("Manipulation of lecture data");
 console.log("==================================");
 
@@ -14,6 +14,7 @@ console.log("Retriving lecture data: " + JSON.stringify(Chemistry));
 console.log("all lectures:");
 console.log(console.table(timeTableModule.getAllLectures()));
 
+//Manipulation of timetable data
 console.log("Manipulation of timetable data");
 console.log("==================================");
 
