@@ -164,7 +164,6 @@ timeTableModule.printTimetable("T001");
 **Expected output:**
 
 ```
-Timetable: T001
 ┌─────────┬─────────────┬───────────┬─────────┬──────────┬──────────┐
 │ (index) │ name        │ startTime │ endTime │ lecturer │ duration │
 ├─────────┼─────────────┼───────────┼─────────┼──────────┼──────────┤
