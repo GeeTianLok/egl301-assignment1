@@ -182,6 +182,7 @@ module.exports = {
           breakEndTime += breakEndMinutes.toString();
         }
 
+        //Push the placeholder table with the desired format
         lects.push({
           name: "break",
           startTime: breakStartTime,
