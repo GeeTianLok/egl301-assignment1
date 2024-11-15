@@ -111,7 +111,7 @@ module.exports = {
       var lecturer = lecture.lecturer;
 
       var hours = Math.floor(startTime);
-      var minutes = Math.round((startTime % 1) * 60);
+      var minutes = Math.round((startTime % 1) * 60); //turns hours into minutes
 
       //Adds a 0 to the start of mins/hrs if its only 1 digit
       var formattedStartTime;
@@ -129,7 +129,7 @@ module.exports = {
 
       var endTimeValue = startTime + duration;
       var endHours = Math.floor(endTimeValue);
-      var endMinutes = Math.round((endTimeValue % 1) * 60);
+      var endMinutes = Math.round((endTimeValue % 1) * 60); //turns hours into minutes
       var formattedEndTime;
 
       //Adds a 0 to the start of mins/hrs if its only 1 digit
@@ -148,7 +148,7 @@ module.exports = {
       //Checking for periods where there are no lessons and assigning it as break time
       if (prevEndTime && startTime > prevEndTime) {
         var breakStartHours = Math.floor(prevEndTime);
-        var breakStartMinutes = Math.round((prevEndTime % 1) * 60);
+        var breakStartMinutes = Math.round((prevEndTime % 1) * 60); //turns hours into minutes
         var breakStartTime;
 
         //Adds a 0 to the start of mins/hrs if its only 1 digit
