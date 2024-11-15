@@ -1,5 +1,7 @@
 # Assignment 1 - GEE TIAN LOK
 
+(idk why its commiting using my personal account but thats me)
+
 ## Timetable Manager
 
 This module allows you to create lectures with varying times and durations and add them to timetables.  
@@ -27,7 +29,7 @@ It is recommended that you run `app.js` after reading through it to study its ou
 
 ---
 
-**Dummy Data Example:**
+**The Following Dummy Data Is Used For The Functions Below And They Are Used Sequentually:**
 
 ```js
 Lectures: {
