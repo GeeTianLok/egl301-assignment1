@@ -1,3 +1,4 @@
+//tbh its kinda dumb to comment on every function espically if the name is self explanatory
 module.exports = {
   //dummy data
   Lectures: {
@@ -22,6 +23,7 @@ module.exports = {
     };
   },
 
+  //get a lecture by its ID
   getLecture(id) {
     return this.Lectures[id];
   },
