@@ -1,6 +1,7 @@
 # Assignment 1 - GEE TIAN LOK
 
 (idk why its commiting using my personal account but thats me)
+![](https://github.com/GeeTianLok/egl301-assignment1/ball.gif)
 
 ## Timetable Manager
 
