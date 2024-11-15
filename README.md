@@ -32,10 +32,16 @@ timeTableModule.setLecture("L004", "Algebra", 16, 3);
 
 ## GetLecture
 
-Returns a lecture given its lecture ID.
+Returns a lecture given its lecture ID here I am retriving the previously declared lecture.
 
 ```js
 var algebraClass = timeTableModule.getLecture("L004");
+```
+
+The expected output should be
+
+```js
+{"name":"Chemistry","startTime":16,"duration":3,"lecturer":"Jerry"}
 ```
 
 # References
