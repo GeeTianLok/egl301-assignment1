@@ -88,7 +88,7 @@ console.table(timeTableModule.getAllLectures());
 
 **Expected output:**
 
-```
+```js
 ┌─────────┬─────────────┬───────────┬──────────┬──────────┐
 │ (index) │ name        │ startTime │ duration │ lecturer │
 ├─────────┼─────────────┼───────────┼──────────┼──────────┤
@@ -163,7 +163,7 @@ timeTableModule.printTimetable("T001");
 
 **Expected output:**
 
-```
+```js
 ┌─────────┬─────────────┬───────────┬─────────┬──────────┬──────────┐
 │ (index) │ name        │ startTime │ endTime │ lecturer │ duration │
 ├─────────┼─────────────┼───────────┼─────────┼──────────┼──────────┤
