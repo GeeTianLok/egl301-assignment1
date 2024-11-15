@@ -15,18 +15,24 @@ It is recommended that you run app.js after reading it to study it's output.
 
 # Functions
 
-1. [GetLecture](#GetLecture)
-2. [SetLecture](#SetLecture)
+1. [SetLecture](#SetLecture)
+2. [GetLecture](#GetLecture)
 3. [getAllLectures](#getAllLectures)
 4. [getTimetable](#getTimetable)
 5. [setTimetable](#setTimetable)
 6. [printTimetable](#printTimetable)
 
+## SetLecture
+
+Create a lecture with the parameters ("Lecture ID", "Lecture name" , "Start time 24 hrs", "duration in hours")
+
+```js
+timeTableModule.setLecture("L004", "Algebra", 16, 3);
+```
+
 ## GetLecture
 
-testing idk how this works
-
-- ayayayaya
+Returns a lecture given its lecture ID.
 
 ```js
 var algebraClass = timeTableModule.getLecture("L004");
