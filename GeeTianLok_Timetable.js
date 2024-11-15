@@ -28,6 +28,7 @@ module.exports = {
     return this.Lectures[id];
   },
 
+  //Returns all lectures
   getAllLectures() {
     return this.Lectures;
   },
@@ -84,6 +85,7 @@ module.exports = {
     }
   },
 
+  //Get a timetable by its ID
   getTimetable(id) {
     return this.TimeTables[id];
   },
